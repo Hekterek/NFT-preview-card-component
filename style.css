@@ -1,0 +1,198 @@
+:root
+{
+    --color-Soft-blue: hsl(215, 51%, 70%);
+    --color-Cyan: hsl(178, 100%, 50%);
+
+    --color-Very-dark-blue1: hsl(217, 54%, 11%);      /*main bg*/
+    --color-Very-dark-blue2: hsl(216, 50%, 16%);      /*card bg*/
+    --color-Very-dark-blue3: hsl(215, 32%, 27%);      /*line*/
+    --color-White: hsl(0, 0%, 100%);
+}
+
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    font-family: "Outfit";
+    background: var(--color-Very-dark-blue1);
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article
+{
+    background: var(--color-Very-dark-blue2);
+    border-radius: 10px;
+    width: 260px;
+    height: 430px;
+    position: relative;
+}
+
+.img_container
+{
+    width: 220px;
+    height: 220px;
+    margin: 20px 20px 0 20px ;
+    position: relative;
+}
+
+.img_equilibrum
+{
+    border-radius: 7px;
+    width: 220px;
+    height: 220px;
+    
+}
+
+.hover
+{
+    background: var(--color-Cyan);
+    border-radius: 7px;
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+}
+
+.view_icon
+{
+    position: absolute;
+    top: 90px;
+    left: 88px;
+    opacity: 0;
+}
+
+.img_container:hover .hover
+{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.img_container:hover .view_icon
+{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.description
+{
+    width: 220px;
+    margin: 0 20px 0 20px;
+    height: max-content;
+    position: relative;
+}
+
+.description h1
+{
+    color: var(--color-White);
+    font-size: 18px;
+    top:  15px;
+    position: relative;
+}
+
+.description h1:hover
+{
+    color: var(--color-Cyan);
+    cursor: pointer;
+}
+
+.description h2
+{
+    color: hsla(215, 51%, 70%,0.7);
+    font-weight: normal;
+    font-size: 13px;
+    top: 30px;
+    position: relative;
+}
+
+.eth
+{
+    position: absolute;
+    top: 100px;
+    left: 1px;
+}
+
+.eth_num
+{
+    position: absolute;
+    top: 101px;
+    left: 18px;
+    color: var(--color-Cyan);
+    font-size: 12px;
+}
+
+.clock
+{
+    position: absolute;
+    top: 100px;
+    right: 65px;
+}
+
+.day_num
+{
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    color: hsla(215, 51%, 70%,0.7);
+    font-size: 13px;
+}
+
+.spacer
+{
+    width: 100%;
+    height: 1px;
+    background: hsla(215, 51%, 70%,0.2);
+    position: absolute;
+    top: 130px;
+}
+
+.avatar
+{
+    position: absolute;
+    top: 145px;
+    border: solid 1px white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+}
+
+.avatar img
+{
+    width: 25px;
+}
+
+.creator
+{
+    position: absolute;
+    top: 150px;
+    left: 36px;
+    color: hsla(215, 51%, 70%,0.9);
+    font-size: 12px;
+}
+
+.author
+{
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    color: var(--color-White);
+    font-size: 12px;
+}
+
+.author:hover
+{
+    color: var(--color-Cyan);
+    cursor: pointer;
+}
